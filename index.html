@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue</title>
+</head>
+<body>
+    
+<div id="app2">
+    <span v-bind:title='message'>
+        we come to make u happy
+    </span>
+</div>
+
+<div id="app">
+{{ message }}
+</div>
+
+
+<div id="app4">
+    <ul v-for="todo in todos" >
+        <li> {{ todo.text }} </li>
+    </ul>
+</div>
+ <!--  -->
+    <div id="app-3">
+        <span v-if="soon"> 
+            ok its true    
+        </span>
+    </div>
+
+
+    <div id="app5">
+        <p>{{ message }} </p>
+        <button v-on:click="getMessage"> click me </button>
+    </div>
+
+
+    <div id="app6">
+        <p>{{ message }}</p>
+        <textarea v-model="message"></textarea>
+    </div>
+
+    <div id="app7">
+        <ol>
+            <todo-item>
+            
+            </todo-item>
+        </ol>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
